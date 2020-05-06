@@ -1,0 +1,5 @@
+.banner{
+    height:255px;
+    background:url("../imgs/business_area/banner.jpg") center center no-repeat;
+    background-size:cover;
+}

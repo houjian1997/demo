@@ -1,0 +1,55 @@
+.bg_search{
+    height:88px;
+    background:url(../../imgs/home/bg/bg_search.png) repeat-x;
+}
+
+.bg_search .search{
+    width:1202px;
+    height:100%;
+    margin:0 auto;
+}
+
+.search .search_left{
+    width:50%;
+    height:100%;
+    float:left;
+}
+
+.search_left .logo{
+    vertical-align: middle;
+}
+
+.search .search_right{
+    width:50%;
+    height:100%;
+    float:left;
+    position: relative;
+}
+
+.search_right .search_box{
+    width:256px;
+    height:35px;
+    background:#fff;
+    position: absolute;
+    top:50%;
+    right:0;
+    margin-top:-17px;
+}
+
+#search_input{
+    display:block;
+    float:left;
+    width:221px;
+    height:35px;
+    line-height:35px;
+    padding-left:10px;
+    box-sizing: border-box;
+    border:2px solid #5cadff;
+}
+
+#search_btn{
+    width:35px;
+    height:35px;
+    background:#5cadff;
+    float:left;
+}

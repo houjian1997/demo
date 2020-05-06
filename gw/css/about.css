@@ -1,0 +1,35 @@
+.banner{
+    height:255px;
+    background:url("../imgs/about/banner.jpg") center center no-repeat;
+    background-size:cover;
+}
+
+.bg_content{
+    background:url("../imgs/bg/bg_01.png") repeat;
+}
+
+.bg_content .content{
+    width:1202px;
+    height:100%;
+    margin:0 auto;
+}
+
+.content .content_item{
+    padding-top:40px;
+    box-sizing:border-box;
+}
+
+.content_item .item_box{
+    width:100%;
+}
+
+.item_box img{
+    display:block;
+    width:100%;
+    height:100%;
+    margin:0 auto;
+}
+
+.content_item strong{
+    font-weight:bold;
+}

@@ -1,0 +1,5 @@
+.banner{
+    height:255px;
+    background:url("../imgs/project_performance/banner.jpg") center center no-repeat;
+    background-size:cover;
+}

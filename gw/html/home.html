@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深圳市爱华勘测工程有限公司-首页</title>
+    <link rel="stylesheet" href="../css/public/common.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/viewerjs/dist/viewer.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/swiper.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/public/header.css" type="text/css">
+    <link rel="stylesheet" href="../css/public/search.css" type="text/css">
+    <link rel="stylesheet" href="../css/public/nav.css" type="text/css">
+    <link rel="stylesheet" href="../css/home.css" type="text/css">
+    <link rel="stylesheet" href="../css/public/footer.css" type="text/css">
+</head>
+
+<body>
+    <div class="boss">
+        <!------------------------------头部---------------------------------->
+        <div class="bg_header">
+            <div class="header">
+                <div class="header_left">
+                    <p id="header_tip">欢迎进入深圳爱华勘测工程有限公司！</p>
+                </div>
+                <div class="header_right">
+                    <ul class="header_ul">
+                        <li>联系我们</li>
+                        <li>中文</li>
+                        <li>English</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!------------------------------logo & search---------------------------------->
+        <div class="bg_search">
+            <div class="search">
+                <div class="search_left">
+                    <img src="../imgs/logo.jpg" alt="" class="logo">
+                </div>
+                <div class="search_right">
+                    <div class="search_box">
+                        <input id="search_input" type="text" placeholder="请输入关键词">
+                        <div id="search_btn" onclick="handelSearch()"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------------导航---------------------------------->
+        <div class="bg_nav">
+            <div class="nav">
+                <ul class="nav_ul">
+                    <li>
+                        <a href="./home.html">网站首页</a>
+                    </li>
+                    <li>
+                        <a href="./about.html?tabIndex=0" target="_blanck">关于爱华</a>
+                        <ol>
+                            <li>
+                                <a href="./about.html?tabIndex=1" target="_blanck">公司简介</a>
+                                <a href="./about.html?tabIndex=2" target="_blanck">发展历程</a>
+                                <a href="./about.html?tabIndex=3" target="_blanck">组织架构</a>
+                                <a href="./about.html?tabIndex=4" target="_blanck">业务辐射</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="./honor.html?tabIndex=0" target="_blanck">资质荣誉</a>
+                        <ol>
+                            <li>
+                                <a href="./honor.html?tabIndex=1" target="_blanck">资质资信</a>
+                                <a href="./honor.html?tabIndex=2" target="_blanck">获奖证书(部分)</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="./business-area.html?tabIndex=0" target="_blanck">业务领域</a>
+                        <ol>
+                            <li>
+                                <a href="./business-area.html?tabIndex=1" target="_blanck">测绘工程</a>
+                                <a href="./business-area.html?tabIndex=2" target="_blanck">地理信息</a>
+                                <a href="./business-area.html?tabIndex=3" target="_blanck">工程勘察</a>
+                                <a href="./business-area.html?tabIndex=4" target="_blanck">土地规划</a>
+                                <a href="./business-area.html?tabIndex=5" target="_blanck">地址勘察</a>
+                                <a href="./business-area.html?tabIndex=6" target="_blanck">地质灾害</a>
+                                <a href="./business-area.html?tabIndex=7" target="_blanck">信息系统集成及服务</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="./project-performance.html?tabIndex=0" target="_blanck">工程业绩</a>
+                        <ol>
+                            <li>
+                                <a href="./project-performance.html?tabIndex=1" target="_blanck">各类项目业绩(部分)</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="./news.html?tabIndex=0" target="_blanck">新闻动态</a>
+                        <ol>
+                            <li>
+                                <a href="./news.html?tabIndex=1" target="_blanck">公司新闻</a>
+                                <a href="./news.html?tabIndex=2" target="_blanck">行业新闻</a>
+                                <a href="./news.html?tabIndex=3" target="_blanck">企业公告</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="./company-culture.html?tabIndex=0" target="_blanck">企业文化</a>
+                        <ol>
+                            <li>
+                                <a href="./company-culture.html?tabIndex=1" target="_blanck">企业文化</a>
+                                <a href="./company-culture.html?tabIndex=2" target="_blanck">爱华之歌</a>
+                                <a href="./company-culture.html?tabIndex=3" target="_blanck">爱华人报</a>
+                                <a href="./company-culture.html?tabIndex=4" target="_blanck">职工园地</a>
+                                <a href="./company-culture.html?tabIndex=5" target="_blanck">培训学习</a>
+                                <a href="./company-culture.html?tabIndex=6" target="_blanck">公益慈善</a>
+                                <a href="./company-culture.html?tabIndex=7" target="_blanck">建党工会</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="./contact.html?tabIndex=0" target="_blanck">联系我们</a>
+                        <ol>
+                            <li>
+                                <a href="./contact.html?tabIndex=1" target="_blanck">联系我们</a>
+                                <a href="./contact.html?tabIndex=2" target="_blanck">加入我们</a>
+                                <a href="./contact.html?tabIndex=3" target="_blanck">业务咨询</a>
+                                <a href="./contact.html?tabIndex=4" target="_blanck">法律声明</a>
+                                <a href="./contact.html?tabIndex=5" target="_blanck">沟通平台</a>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!------------------------------banner---------------------------------->
+        <div class="banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(../imgs/home/banner/banner01.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(../imgs/home/banner/banner02.jpg)"></div>
+                    <div class="swiper-slide" style="background-image:url(../imgs/home/banner/banner03.jpg)"></div>
+                </div>
+                <div class="swiper-pagination swiper-pagination-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+                <div class="swiper-button-next swiper-button-white"></div>
+            </div>
+        </div>
+        <!------------------------------公告---------------------------------->
+        <div class="bg_notice">
+            <div class="notice">
+                <p>最新公告：</p>
+            </div>
+        </div>
+        <!------------------------------关于我们---------------------------------->
+        <div class="bg_about">
+            <div class="about">
+                <div class="about_left">
+                    <img src="../imgs/home/about_us.jpg" alt="">
+                </div>
+                <div class="about_right">
+                    <h1>关于我们</h1>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;深圳市爱华勘测工程有限公司是深圳市综合实力较强，理念超前，管理先进，发展迅速的专业勘测公司。<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司具有工程测量、地籍测量、房产测绘、地理信息系统甲级资质，同时具有岩土工程勘察、海洋测绘、摄影测量与遥感、行政区域界线测绘、地图编制和土地整治、利用、保护、规划等的编制、设计、论证、评估等乙级资质。专业技术力量雄厚，拥有高性能网络服务器、高精度全站仪、数字水准仪、GPS、管线探测仪、测深仪、图形工作站等众多先进仪器设备。公司成立技术专家委员会，专门负责指导各类工程项目的实施、检查与审核。
+                    </p>
+                    <div id="about_more">
+                        <a href="#" target="_blank">MORE+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------------业务领域---------------------------------->
+        <div class="bg_business_area">
+            <div class="business_area">
+                <div class="business_area_top">
+                    <strong>BUSINESS AREAS</strong>
+                    <p><span>业务领域</span></p>
+                </div>
+                <div class="business_area_bottom">
+                    <ul class="business_area_ul">
+                        <li>
+                            <div class="business_pic">
+                                <a class="on" href="#" target="_blanck">
+                                    <img src="../imgs/home/business_area/business_01.png" alt="">
+                                </a>
+                                <a class="off" href="#" target="_blanck">
+                                    <img src="../imgs/home/business_area/business_01_active.png" alt="">
+                                </a>
+                            </div>
+                            <div class="business_text">
+                                <h2>测绘工程</h2>
+                                <span>Surveying and mapping Engineering</span>
+                                <p>精心设计、精准勘测<br />精尖产品、精致服务</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="business_pic">
+                                <a class="on" href="#" target="_blanck">
+                                    <img src="../imgs/home/business_area/business_02.png" alt="">
+                                </a>
+                                <a class="off" href="#" target="_blanck">
+                                    <img src="../imgs/home/business_area/business_02_active.png" alt="">
+                                </a>
+                            </div>
+                            <div class="business_text">
+                                <h2>地理信息</h2>
+                                <span>Geological information</span>
+                                <p>精心设计、精准勘测<br />精尖产品、精致服务</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="business_pic">
+                                <a class="on" href="#" target="_blanck">
+                                    <img src="../imgs/home/business_area/business_03.png" alt="">
+                                </a>
+                                <a class="off" href="#" target="_blanck">
+                                    <img src="../imgs/home/business_area/business_03_active.png" alt="">
+                                </a>
+                            </div>
+                            <div class="business_text">
+                                <h2>工程勘察</h2>
+                                <span>Engineering Investigation</span>
+                                <p>精心设计、精准勘测<br />精尖产品、精致服务</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="business_pic">
+                                <a class="on" href="#" target="_blanck">
+                                    <img src="../imgs/home/business_area/business_04.png" alt="">
+                                </a>
+                                <a class="off" href="#" target="_blanck">
+                                    <img src="../imgs/home/business_area/business_04_active.png" alt="">
+                                </a>
+                            </div>
+                            <div class="business_text">
+                                <h2>土地规划</h2>
+                                <span>Land Planning</span>
+                                <p>精心设计、精准勘测<br />精尖产品、精致服务</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="business_pic">
+                                <a class="on" href="#" target="_blanck">
+                                    <img src="../imgs/home/business_area/business_05.png" alt="">
+                                </a>
+                                <a class="off" href="#" target="_blanck">
+                                    <img src="../imgs/home/business_area/business_05_active.png" alt="">
+                                </a>
+                            </div>
+                            <div class="business_text">
+                                <h2>地质勘察</h2>
+                                <span>Geological Exploration</span>
+                                <p>精心设计、精准勘测<br />精尖产品、精致服务</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="business_pic">
+                                <a class="on" href="#" target="_blanck">
+                                    <img src="../imgs/home/business_area/business_06.png" alt="">
+                                </a>
+                                <a class="off" href="#" target="_blanck">
+                                    <img src="../imgs/home/business_area/business_06_active.png" alt="">
+                                </a>
+                            </div>
+                            <div class="business_text">
+                                <h2>地质灾害治理</h2>
+                                <span>Geological disaster management</span>
+                                <p>精心设计、精准勘测<br />精尖产品、精致服务</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="business_pic">
+                                <a class="on" href="#" target="_blanck">
+                                    <img src="../imgs/home/business_area/business_07.png" alt="">
+                                </a>
+                                <a class="off" href="#" target="_blanck">
+                                    <img src="../imgs/home/business_area/business_07_active.png" alt="">
+                                </a>
+                            </div>
+                            <div class="business_text">
+                                <h2>计算机系统集成</h2>
+                                <span>Computer System Assembly</span>
+                                <p>精心设计、精准勘测<br />精尖产品、精致服务</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!------------------------------案例展示---------------------------------->
+        <div class="bg_case_show">
+            <div class="case_show">
+                <div class="case_show_top">
+                    <strong>CASE SHOW</strong>
+                    <p><span>案例展示</span></p>
+                </div>
+                <div class="case_show_bottom">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!------------------------------新闻动态---------------------------------->
+        <div class="bg_news">
+            <div class="news">
+                <div class="news_top">
+                    <strong>NEWS CENTER</strong>
+                    <p><span>新闻动态</span></p>
+                </div>
+                <div class="news_center">
+                    <ul class="news_tab">
+                        <li class="active">爱华新闻</li>
+                        <li>行业动态</li>
+                        <li>企业公告</li>
+                    </ul>
+                </div>
+                <div class="news_bottom">
+                    <dl class="news_list list_1">
+                        <dt>
+                            <h1>03</h1>
+                            <p>2020-01</p>
+                        </dt>
+                        <dd>
+                            <ol>
+                                <li class="title_li">
+                                    <h3>
+                                        <a href="#" target="_blanck" title="爱华勘测公司2019年度员工总结大会">爱华勘测公司2019年度员工总结大会</a>
+                                    </h3>
+                                </li>
+                                <li class="author_li">
+                                    <span>作者：</span>
+                                    <span>浏览次数:</span>
+                                </li>
+                                <li class="summary_li">
+                                    爱华勘测公司2019年度员工总结大会爱华勘测公司2019年在全体员工的共同努力下，取得了全年合同额突破3.5亿元的好成绩，公司发展再上新台阶。2019年12月30日下午公司隆重召开了员工总结表彰大会。动员全体员工总结成绩，创先争优，同舟共济...
+                                </li>
+                            </ol>
+                        </dd>
+                    </dl>
+                    <dl class="news_list list_1">
+                        <dt>
+                            <h1>02</h1>
+                            <p>2020-01</p>
+                        </dt>
+                        <dd>
+                            <ol>
+                                <li class="title_li">
+                                    <h3>
+                                        <a href="#" target="_blanck"
+                                            title="爱华勘测公司2019年度干部大会及2020年工作会议圆满落幕">爱华勘测公司2019年度干部大会及2020年工作会议圆满落幕</a>
+                                    </h3>
+                                </li>
+                                <li class="author_li">
+                                    <span>作者：</span>
+                                    <span>浏览次数:</span>
+                                </li>
+                                <li class="summary_li">
+                                    爱华勘测公司2019年度干部大会及2020年工作会议圆满落幕2019年12月28日，爱华勘测公司2019年度干部大会及2020年工作会议在深圳总公司隆重召开，总公司领导、分公司和事业部负责人参加了此次会议，会议由总经理皮金犬主持。会议在铿锵...
+                                </li>
+                            </ol>
+                        </dd>
+                    </dl>
+
+                    <dl class="news_list list_2">
+                        <dt>
+                            <h1>25</h1>
+                            <p>2017-10</p>
+                        </dt>
+                        <dd>
+                            <ol>
+                                <li class="title_li">
+                                    <h3>
+                                        <a href="#" target="_blanck"
+                                            title="中国共产党第十九届中央委员会第一次全体会议公报">中国共产党第十九届中央委员会第一次全体会...</a>
+                                    </h3>
+                                </li>
+                                <li class="author_li">
+                                    <span>作者：</span>
+                                    <span>浏览次数:</span>
+                                </li>
+                                <li class="summary_li">
+                                    中国共产党第十九届中央委员会第一次全体会议公报<br />（2017年10月25日中国共产党第十九届中央委员会第一次全体会议通过）<br />中国共产党第十九届中央...
+                                </li>
+                            </ol>
+                        </dd>
+                    </dl>
+                    <dl class="news_list list_2">
+                        <dt>
+                            <h1>30</h1>
+                            <p>2017-06</p>
+                        </dt>
+                        <dd>
+                            <ol>
+                                <li class="title_li">
+                                    <h3>
+                                        <a href="#" target="_blanck" title="新《测绘法》7月1日起施行">新《测绘法》7月1日起施行</a>
+                                    </h3>
+                                </li>
+                                <li class="author_li">
+                                    <span>作者：</span>
+                                    <span>浏览次数:</span>
+                                </li>
+                                <li class="summary_li">
+                                    新修订的《中华人民共和国测绘法》将于7月1日起正式施行。<br />今年4月27日，十二届全国人大常委会第二十七次会议表决通过新修订的《中华人民共和国测绘法...
+                                </li>
+                            </ol>
+                        </dd>
+                    </dl>
+
+                    <dl class="news_list list_3">
+                        <dt>
+                            <h1>30</h1>
+                            <p>2020-01</p>
+                        </dt>
+                        <dd>
+                            <ol>
+                                <li class="title_li">
+                                    <h3>
+                                        <a href="#" target="_blanck" title="爱华勘测公司2019年度员工总结大会">爱华勘测公司2019年度员工总结大会</a>
+                                    </h3>
+                                </li>
+                                <li class="author_li">
+                                    <span>作者：</span>
+                                    <span>浏览次数:</span>
+                                </li>
+                                <li class="summary_li">
+                                    爱华勘测公司2019年度员工总结大会爱华勘测公司2019年在全体员工的共同努力下，取得了全年合同额突破3.5亿元的好成绩，公司发展再上新台阶。2019年12月3...
+                                </li>
+                            </ol>
+                        </dd>
+                    </dl>
+                    <dl class="news_list list_3">
+                        <dt>
+                            <h1>02</h1>
+                            <p>2020-01</p>
+                        </dt>
+                        <dd>
+                            <ol>
+                                <li class="title_li">
+                                    <h3>
+                                        <a href="#" target="_blanck"
+                                            title="爱华勘测公司2019年度干部大会及2020年工作会议圆满落幕">爱华勘测公司2019年度干部大会及202...</a>
+                                    </h3>
+                                </li>
+                                <li class="author_li">
+                                    <span>作者：</span>
+                                    <span>浏览次数:</span>
+                                </li>
+                                <li class="summary_li">
+                                    爱华勘测公司2019年度干部大会及2020年工作会议圆满落幕2019年12月28日，爱华勘测公司2019年度干部大会及2020年工作会议在深圳总公司隆重召开，总....
+                                </li>
+                            </ol>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <!------------------------------企业文化---------------------------------->
+        <div class="bg_comany_culture">
+            <div class="company_culture">
+                <div class="company_culture_top">
+                    <strong>COMPANY CULTURE</strong>
+                    <p><span>企业文化</span></p>
+                </div>
+                <div class="company_culture_center">
+                    <ul class="company_culture_ul" id="imgs"></ul>
+                </div>
+                <div class="company_culture_bottom">
+                    <div id="company_culture_more"><a href="#" target="_blank">MORE+</a></div>
+                </div>
+            </div>
+        </div>
+        <!------------------------------联系我们---------------------------------->
+        <div class="bg_contact">
+            <div class="contact">
+                <div class="contact_top">
+
+                </div>
+                <div class="contact_center">
+                    <div class="title">
+                        <strong>CONTACT US</strong>
+                        <p><span>联系我们</span></p>
+                    </div>
+                    <div class="address">
+                        <h2>Shenzhen Aihua Survey Engineering Co., Ltd</h2>
+                        <h3>深圳市爱华勘测工程有限公司</h3>
+                        <ul class="address_ul">
+                            <li>
+                                <img src="../imgs/home/icon/icon_01.png" alt="">
+                                <span>电话：0755-8351 2114</span>
+                            </li>
+                            <li>
+                                <img src="../imgs/home/icon/icon_02.png" alt="">
+                                <span>传真：0755-8351 2114</span>
+                            </li>
+                            <li>
+                                <img src="../imgs/home/icon/icon_03.png" alt="">
+                                <span>Email：<a href="#" target="_blanck">szahkc@126.com</a></span>
+                            </li>
+                            <li>
+                                <img src="../imgs/home/icon/icon_04.jpg" alt="">
+                                <span>地址：深圳市龙岗区平湖街道平湖社区平安大道1号华南城铁东物流区13栋16层</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="map"></div>
+                </div>
+                <div class="contact_bottom"></div>
+            </div>
+        </div>
+        <!------------------------------尾部---------------------------------->
+        <div class="bg_footer">
+            <div class="footer">
+                <ul class="footer_nav">
+                    <li><a href="./about.html?tabIndex=0" target="_blanck">关于爱华</a></li>
+                    <li><a href="./honor.html?tabIndex=0" target="_blanck">资质荣誉</a></li>
+                    <li><a href="./business-area.html?tabIndex=0" target="_blanck">业务领域</a></li>
+                    <li><a href="./project-performance.html?tabIndex=0" target="_blanck">工程业绩</a></li>
+                    <li><a href="./news.html?tabIndex=0" target="_blanck">新闻动态</a></li>
+                    <li><a href="./company-culture.html?tabIndex=0" target="_blanck">企业文化</a></li>
+                    <li><a href="./contact.html?tabIndex=0" target="_blanck">联系我们</a></li>
+                </ul>
+                <p>
+                    联系电话：0755-83512114、83467794　　　　传真：0755-83512114　　　　Email：<a
+                        href="mailto:szahkc@126.com">szahkc@126.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;QQ：408667398<br />深圳市龙岗区平湖街道平湖社区平安大道1号华南城铁东物流区13栋16层
+                </p>
+            </div>
+            <div class="copyright">深圳市爱华勘测工程有限公司页面版权所有&nbsp;&nbsp;
+                <a href="http://beian.miit.gov.cn/" target="_blanck">粤ICP备17026116号</a>&nbsp;&nbsp;
+                <a href="#" target="_blanck">网站建设:切图仔</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/viewer.js"></script>
+<script src="../js/jquery-viewer.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/header.js"></script>
+<script>
+    function handelSearch() {
+        console.log($("#search_input").val())
+    }
+
+    // 轮播
+    var mySwiper = new Swiper('.swiper-container', {
+        autoplay: true,//可选选项，自动滑动
+        loop: true,
+        spaceBetween: 30,
+        effect: 'fade',
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            dynamicBullets: true,
+        },
+    })
+
+    $(".business_text").on("mouseover", function () {
+
+    })
+
+    // 切换tab 显示新闻
+    $(".list_2").each(function (index, item) {
+        $(item).hide();
+    })
+    $(".list_3").each(function (index, item) {
+        $(item).hide();
+    })
+    $(".news_tab").delegate("li", "click", function (e) {
+        $(".news_list").each(function (index, item) {
+            $(item).hide();
+        })
+        $(e.target).addClass("active").siblings().removeClass("active")
+        let index = $(e.target).index() + 1;
+        $(`.list_${index}`).each(function (index, item) {
+            $(item).show();
+        })
+    })
+
+    // 渲染图片列表
+    initCultureList();
+    function initCultureList() {
+        let cultureList = [
+            { imgSrc: "../imgs/home/company_culture/culture_01.jpg", imgTitle: "公司积极参与测绘法制宣传活动", index: 1 },
+            { imgSrc: "../imgs/home/company_culture/culture_02.jpg", imgTitle: "公司积极参与测绘法制宣传活动", index: 2 },
+            { imgSrc: "../imgs/home/company_culture/culture_03.jpg", imgTitle: "公司积极参与测绘法制宣传活动", index: 3 },
+            { imgSrc: "../imgs/home/company_culture/culture_04.jpg", imgTitle: "公司积极参与测绘法制宣传活动", index: 4 },
+            { imgSrc: "../imgs/home/company_culture/culture_05.jpg", imgTitle: "公司积极参与测绘法制宣传活动", index: 5 },
+            { imgSrc: "../imgs/home/company_culture/culture_06.jpg", imgTitle: "公司积极参与测绘法制宣传活动", index: 6 },
+            { imgSrc: "../imgs/home/company_culture/culture_07.jpg", imgTitle: "公司积极参与测绘法制宣传活动", index: 7 },
+            { imgSrc: "../imgs/home/company_culture/culture_08.jpg", imgTitle: "公司积极参与测绘法制宣传活动", index: 8 },
+            { imgSrc: "../imgs/home/company_culture/culture_09.jpg", imgTitle: "公司积极参与测绘法制宣传活动", index: 9 },
+            { imgSrc: "../imgs/home/company_culture/culture_10.jpg", imgTitle: "公司积极参与测绘法制宣传活动", index: 10 }
+        ];
+        let str = "", $imgs = $("#imgs");
+        cultureList.forEach(item => {
+            str += ` <li>
+                            <img src=${item.imgSrc} alt="" title=${item.imgTitle}>
+                            <p>${item.imgTitle}</p>
+                        </li>`
+        })
+        $(".company_culture_ul").html(str);
+        $imgs.viewer({
+            viewed: function () {
+                $imgs.viewer('zoomTo', 1);
+            }
+        });
+    }
+
+    setInterval(() => {
+        let positionX = $(".company_culture_ul").position().left;
+        let imgWidth = $(".company_culture_ul li img").width();
+        positionX -= 1;
+        $(".company_culture_center .company_culture_ul").css("left", positionX);
+        // let index = Math.floor(Math.abs(positionX / (imgWidth + 20)));
+        // if (index >= 10) {
+        //     index = 0;
+        // }
+        // let lastImg = cultureList.find(item => {
+        //     return item.index === index;
+        // })
+    }, 50)
+</script>
+
+</html>

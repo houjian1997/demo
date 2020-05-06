@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深圳市爱华勘测工程有限公司-关于爱华</title>
+    <link rel="stylesheet" href="../css/public/common.css" type="text/css">
+    <link rel="stylesheet" href="../css/public/header.css" type="text/css">
+    <link rel="stylesheet" href="../css/public/search.css" type="text/css">
+    <link rel="stylesheet" href="../css/public/nav.css" type="text/css">
+    <link rel="stylesheet" href="../css/about.css" type="text/css">
+    <link rel="stylesheet" href="../css/public/route.css" type="text/css">
+    <link rel="stylesheet" href="../css/public/tab.css" type="text/css">
+    <link rel="stylesheet" href="../css/public/footer.css" type="text/css">
+</head>
+
+<body>
+    <div class="boss">
+        <!------------------------------头部---------------------------------->
+        <div class="bg_header">
+            <div class="header">
+                <div class="header_left">
+                    <p id="header_tip">欢迎进入深圳爱华勘测工程有限公司！</p>
+                </div>
+                <div class="header_right">
+                    <ul class="header_ul">
+                        <li>联系我们</li>
+                        <li>中文</li>
+                        <li>English</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!------------------------------logo & search---------------------------------->
+        <div class="bg_search">
+            <div class="search">
+                <div class="search_left">
+                    <img src="../imgs/logo.jpg" alt="" class="logo">
+                </div>
+                <div class="search_right">
+                    <div class="search_box">
+                        <input id="search_input" type="text" placeholder="请输入关键词">
+                        <div id="search_btn" onclick="handelSearch()"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------------导航---------------------------------->
+        <div class="bg_nav">
+            <div class="nav">
+                <ul class="nav_ul">
+                    <li>
+                        <a href="./home.html" target="_blanck">网站首页</a>
+                    </li>
+                    <li>
+                        <a href="./about.html?tabIndex=0">关于爱华</a>
+                        <ol>
+                            <li>
+                                <a href="./about.html?tabIndex=1">公司简介</a>
+                                <a href="./about.html?tabIndex=2">发展历程</a>
+                                <a href="./about.html?tabIndex=3">组织架构</a>
+                                <a href="./about.html?tabIndex=4">业务辐射</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="./honor.html?tabIndex=0" target="_blanck">资质荣誉</a>
+                        <ol>
+                            <li>
+                                <a href="./honor.html?tabIndex=1" target="_blanck">资质资信</a>
+                                <a href="./honor.html?tabIndex=2" target="_blanck">获奖证书(部分)</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="./business-area.html?tabIndex=0" target="_blanck">业务领域</a>
+                        <ol>
+                            <li>
+                                <a href="./business-area.html?tabIndex=1" target="_blanck">测绘工程</a>
+                                <a href="./business-area.html?tabIndex=2" target="_blanck">地理信息</a>
+                                <a href="./business-area.html?tabIndex=3" target="_blanck">工程勘察</a>
+                                <a href="./business-area.html?tabIndex=4" target="_blanck">土地规划</a>
+                                <a href="./business-area.html?tabIndex=5" target="_blanck">地址勘察</a>
+                                <a href="./business-area.html?tabIndex=6" target="_blanck">地质灾害</a>
+                                <a href="./business-area.html?tabIndex=7" target="_blanck">信息系统集成及服务</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="./project-performance.html?tabIndex=0" target="_blanck">工程业绩</a>
+                        <ol>
+                            <li>
+                                <a href="./project-performance.html?tabIndex=1" target="_blanck">各类项目业绩(部分)</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="./news.html?tabIndex=0" target="_blanck">新闻动态</a>
+                        <ol>
+                            <li>
+                                <a href="./news.html?tabIndex=1" target="_blanck">公司新闻</a>
+                                <a href="./news.html?tabIndex=2" target="_blanck">行业新闻</a>
+                                <a href="./news.html?tabIndex=3" target="_blanck">企业公告</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="./company-culture.html?tabIndex=0" target="_blanck">企业文化</a>
+                        <ol>
+                            <li>
+                                <a href="./company-culture.html?tabIndex=1" target="_blanck">企业文化</a>
+                                <a href="./company-culture.html?tabIndex=2" target="_blanck">爱华之歌</a>
+                                <a href="./company-culture.html?tabIndex=3" target="_blanck">爱华人报</a>
+                                <a href="./company-culture.html?tabIndex=4" target="_blanck">职工园地</a>
+                                <a href="./company-culture.html?tabIndex=5" target="_blanck">培训学习</a>
+                                <a href="./company-culture.html?tabIndex=6" target="_blanck">公益慈善</a>
+                                <a href="./company-culture.html?tabIndex=7" target="_blanck">建党工会</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="./contact.html?tabIndex=0" target="_blanck">联系我们</a>
+                        <ol>
+                            <li>
+                                <a href="./contact.html?tabIndex=1" target="_blanck">联系我们</a>
+                                <a href="./contact.html?tabIndex=2" target="_blanck">加入我们</a>
+                                <a href="./contact.html?tabIndex=3" target="_blanck">业务咨询</a>
+                                <a href="./contact.html?tabIndex=4" target="_blanck">法律声明</a>
+                                <a href="./contact.html?tabIndex=5" target="_blanck">沟通平台</a>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!------------------------------banner---------------------------------->
+        <div class="banner"></div>
+        <!------------------------------route---------------------------------->
+        <div class="bg_route">
+            <div class="route">
+                <ul class="route_ul">
+                    <li>您现在所在的位置：</li>
+                </ul>
+            </div>
+        </div>
+        <!------------------------------content---------------------------------->
+        <div class="bg_content">
+            <div class="content">
+                <ul class="tab_ul">
+                    <li class="active"><a href="./about.html?tabIndex=1">公司简介</a></li>
+                    <li><a href="./about.html?tabIndex=2">发展历程</a></li>
+                    <li><a href="./about.html?tabIndex=3">组织架构</a></li>
+                    <li><a href="./about.html?tabIndex=4">业务辐射</a></li>
+                </ul>
+                <div class="content_item">
+                    <div class="item_box" id="item_box_1">
+                        <p
+                            style="margin-bottom: 0em; text-align: center; margin-top: 1em; letter-spacing: 0px; line-height: 3em; text-indent: 2em;">
+                            <strong><span style="font-size: 29.3px;"><span
+                                        style="font-family: 宋体, tahoma, arial, sans-serif;"><span>深圳市爱华勘测工程有限公司简介</span></span></span></strong>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; margin-top: 1em; letter-spacing: 0px; line-height: 3em; text-indent: 2em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span
+                                    style="font-size: 18px;">深圳市爱华勘测工程有限公司成立于1998年4月,
+                                    是一家“资质资信体系齐全，技术力量雄厚，管理理念先进，市场发展迅速”的专业勘测公司，2016年被认定为国家高新技术企业。</span></span></p>
+                        <p
+                            style="margin-bottom: 0em; margin-top: 1em; letter-spacing: 0px; line-height: 3em; text-indent: 2em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span
+                                    style="font-size: 18px;"><strong>资质资信：</strong>具有大地测量；测绘航空摄影；摄影测量与遥感；地理信息系统；工程测量；不动产测绘（地籍测绘，房产测绘，行政区划界线测绘）；海洋测绘；地图编制等测绘甲级资质；工程勘察（岩土工程，工程测量）甲级资质；信息系统集成与服务叁级资质；地质勘查（固体矿产勘查）乙级资质；土地规划乙级资质；地质灾害（勘查、评估、设计、治理）丙级资质；检验检测资质（CMA）；是通过ISO9001+14001+OHSAS18001+ISO/IEC27001+GB/T29490-2013五合一管理体系认证的高新双软企业。公司成立以来，多次获得国家级和广东省“守合同重信用企业”、“中国测绘行业诚信经营示范企业”、“AAAAA级信用企业”、“
+                                    AAA级重合同守信用企业”、“广东省诚信示范企业”等多种荣誉称号。</span></span></p>
+                        <p
+                            style="margin-bottom: 0em; margin-top: 1em; letter-spacing: 0px; line-height: 3em; text-indent: 2em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span
+                                    style="font-size: 18px;"><strong>技术人才：</strong>公司不仅拥有十几名优秀的注册工程师（岩土、测绘、一级结构、一级建造、监理），而且还拥有测绘类、勘察设计类、建筑工程类和计算机软件开发类等专业中、高级职称技术人员70余人。&nbsp;&nbsp;</span></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; margin-top: 1em; letter-spacing: 0px; line-height: 3em; text-indent: 2em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span
+                                    style="font-size: 18px;"><strong>研发能力：</strong>公司成立了技术研发部，组建了专业技术研发团队，配置了高性能网络服务器和专业型工作站。组建了由行业专家和硕士研究生领队的技术研发团队，紧跟勘测行业前沿技术，具备方案设计、软件开发、数据采集、数据库建设、工程监理、信息系统集成等多领域研发能力，具备城管、国土、矿产、管网、水利等大型GIS数据的建库能力，公司拥有一批自主知识产权的专利产品。</span></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; margin-top: 1em; letter-spacing: 0px; line-height: 3em; text-indent: 2em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span
+                                    style="font-size: 18px;"><strong>质量控制：</strong>公司不仅有独立的质量检查审核部门，而且成立了专家技术委员会，重点负责对公司承接大、中型项目的技术设计、方案审查、施工组织、质量控制和验收等工作。</span></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; margin-top: 1em; letter-spacing: 0px; line-height: 3em; text-indent: 2em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span
+                                    style="font-size: 18px;"><strong>发展愿景：</strong>自2016年以来，公司发展迅速，市场分布全国，先后在新疆、湖北、广东、天津、安徽、贵州等省地设立了60家分公司，积极参与了第二次全国土地调查、农村集体土地确权登记发证、农村宅基地确权登记发证、农村土地承包确权发证、地理国情普查、地名普查等业务，服务贴近客户，社会信誉良好。</span></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; margin-top: 1em; letter-spacing: 0px; line-height: 3em; text-indent: 2em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span
+                                    style="font-size: 18px;"><strong>领导关怀：</strong>公司的成长和发展始终得到了上级部门和行业领导的关怀！2004年11月，广东省国土资源厅领导陪同越南国家测绘局代表团考察我公司，给予了高度评价。2006年10
+                                    月公司参加“中国测绘50年成就展”，原国家测绘局李维森副局长亲临现场，肯定了爱华公司的快速发展，并欣然题词：“面向行业，服务社会，共建勘测信息化未来！”。2007年12月，广东省国土资源厅原张新民副厅长考察爱华公司，勉励公司并题词：“勇于开拓，乐于奉献，为测绘事业树立品牌！”。2009年6月24日，原国家测绘局李维森副局长率领考察团到爱华公司考察工作，肯定了公司的发展和取得的成绩，勉励爱华公司再接再厉，为民营勘测企业树立典范！</span></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; margin-top: 1em; letter-spacing: 0px; line-height: 3em; text-indent: 2em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span
+                                    style="font-size: 18px;"><strong>品牌建设：</strong>公司注重品牌建设和企业文化朔造，高度重视建立企业诚信，多次获得国家级和广东省颁发的“重合同守信用企业”、“中国测绘行业诚信经营示范企业”等多种荣誉称号。</span></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; margin-top: 1em; letter-spacing: 0px; line-height: 3em; text-indent: 2em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span
+                                    style="font-size: 18px;">公司建立了党支部、工会组织和共青团组织，用企业文化建设去培育公司员工爱国、爱家、爱企业的情怀！公司注册了商标、建立了中英文网站(<a
+                                        href="http://www.szahkc.com">www.szahkc.com</a>)，设立质量投诉及售后服务中心。公司的“四精”质量方针、“四赢”企业精神、“四同”企业宗旨，即“精•赢•同”文化，展示了爱华公司特有的企业文化，并在国家知识版权网站中注册。</span></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; margin-top: 1em; letter-spacing: 0px; line-height: 3em; text-indent: 2em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span
+                                    style="font-size: 18px;"><strong>“四精”质量方针：</strong>精心设计&nbsp;&nbsp; 精准勘测&nbsp;&nbsp;
+                                    精尖产品&nbsp;&nbsp; 精致服务</span></span></p>
+                        <p
+                            style="margin-bottom: 0em; margin-top: 1em; letter-spacing: 0px; line-height: 3em; text-indent: 2em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span
+                                    style="font-size: 18px;"><strong>“四赢”企业精神：</strong>与时俱进赢机遇&nbsp;&nbsp; 励精图治赢发展&nbsp;
+                                    &nbsp;创造卓越赢尊崇&nbsp;&nbsp; 做强做大赢未来</span></span></p>
+                        <p
+                            style="margin-bottom: 0em; margin-top: 1em; letter-spacing: 0px; line-height: 3em; text-indent: 2em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span
+                                    style="font-size: 18px;"><strong>“四同”企业宗旨：</strong> 同努力&nbsp;&nbsp; 同进步&nbsp;
+                                    同奉献&nbsp; 同发展</span></span></p>
+                    </div>
+
+                    <div class="item_box" id="item_box_2">
+                        <p
+                            style="margin-bottom: 0em; text-align: center; margin-top: 0em; letter-spacing: 0em; line-height: 5em; text-indent: 0em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><strong><span
+                                        style="font-size: 29px;"><span><span><span>爱华勘测公司发展历程</span></span></span></span></strong></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; text-align: justify; margin-top: 0em; letter-spacing: 0em; line-height: 3em; text-indent: 3em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span><span
+                                        style="font-size: 18px;">1、2003年，深圳市爱华测绘有限公司注册成立，同年12月取得测绘乙级资质。</span></span></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; text-align: justify; margin-top: 0em; letter-spacing: 0em; line-height: 3em; text-indent: 3em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span><span
+                                        style="font-size: 18px;">2、2004年，公司成立了第一家分公司——广州分公司，拉开了公司业务向深圳市域外市场拓展的序幕；公司顺利通过了ISO9001质量管理体系认证；同年10月，公司作为民营测绘企业代表，国家测绘局科技司范京生副主任和广东省国土资源厅张新民副厅长等领导陪同越南国家测绘局陈光局长一行来爱华公司考察工作。&nbsp;</span></span></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; text-align: justify; margin-top: 0em; letter-spacing: 0em; line-height: 3em; text-indent: 3em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span><span
+                                        style="font-size: 18px;">3、2005年，公司办公地点从银海苑搬迁至正规写字楼通业大厦17楼，标志着公司的规模发展迈上一个新台阶；中共深圳市福田区民营经济工作委员会批准并成立中共深圳市爱华测绘有限公司党支部。</span></span></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; text-align: justify; margin-top: 0em; letter-spacing: 0em; line-height: 3em; text-indent: 3em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span><span
+                                        style="font-size: 18px;">4、2006年6月，公司更名为深圳市爱华勘测工程有限公司；同月，公司测绘资质从乙级升为甲级，是中国第一家民营测绘甲级资质单位；公司顺利通过了ISO9001+ISO14001+OHSAS18001三合一管理体系认证；同年7月，《爱华测绘之歌》MTV制作完毕并发布；同年7月，公司取得了工程勘察专业类（岩土工程，工程测量）乙级实习资质，标志着公司向业务多元化的发展；同年8月新疆分公司成立，标志着公司业务向省外市场拓展。2006年，公司在北京参加“中国测绘50年成就展”，国家测绘局李维森副局长亲临现场对我公司欣然题词：“面向行业，服务社会”！</span></span></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; text-align: justify; margin-top: 0em; letter-spacing: 0em; line-height: 3em; text-indent: 3em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span><span
+                                        style="font-size: 18px;">5、2007年，爱华勘测公司相继成立湖北分公司、韶关分公司、肇庆分公司，标志着爱华勘测公司的业务向纵深区域发展；同年11月，广东省国土资源厅张新民副厅长、李俊祥处长等领导来我公司考察，张厅长为爱华公司题词：“勇于开拓，乐于奉献，为测绘事业树立品牌！”</span></span></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; text-align: justify; margin-top: 0em; letter-spacing: 0em; line-height: 3em; text-indent: 3em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span><span
+                                        style="font-size: 18px;">6、2008年，公司成立了天津分公司；同年7月，公司工程勘察专业类（岩土工程，工程测量）乙级资质转正；同年8月，深圳市爱华勘测工程有限公司工会委员会成立。</span></span></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; text-align: justify; margin-top: 0em; letter-spacing: 0em; line-height: 3em; text-indent: 3em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span><span
+                                        style="font-size: 18px;">7、2009年，国家测绘局李维森副局长率领考察团领导来到爱华公司调研，肯定了爱华公司取得的成绩，勉励爱华公司：“争创行业一流”。</span></span></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; text-align: justify; margin-top: 0em; letter-spacing: 0em; line-height: 3em; text-indent: 3em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span><span
+                                        style="font-size: 18px;">8、2010年，公司成立共青团深圳市爱华勘测工程有限公司委员会。</span></span></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; text-align: justify; margin-top: 0em; letter-spacing: 0em; line-height: 3em; text-indent: 3em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span><span
+                                        style="font-size: 18px;">9、2011年，公司被认定为软件企业，“双软”认证顺利通过；同年6月，公司取得土地规划丙级资质；同年8月，公司“精、赢、同”企业文化完成作品著作权登记；同年11月，公司首次获得2项中国测绘地理信息学会铜奖。</span></span></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; text-align: justify; margin-top: 0em; letter-spacing: 0em; line-height: 3em; text-indent: 3em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span><span
+                                        style="font-size: 18px;">10、2012年，爱华勘测安徽分公司成立；同年9月，公司内刊《爱华人》获2012广东省企业内刊最佳企业报纸铜奖；同年11月公司首次获得项目集体金奖；同年11月，爱华勘测贵州分公司成立。</span></span></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; text-align: justify; margin-top: 0em; letter-spacing: 0em; line-height: 3em; text-indent: 3em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span><span
+                                        style="font-size: 18px;">11、2013年，公司首次获得国家级银奖；同年11月，公司土地规划资质升为乙级；同年先后成立了天津第一分公司、东莞分公司、云南分公司、惠州分公司等4家分公司。</span></span></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; text-align: justify; margin-top: 0em; letter-spacing: 0em; line-height: 3em; text-indent: 3em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span><span
+                                        style="font-size: 18px;">12、2014年先后成立了山西分公司、湖南分公司、北京分公司、临沧分公司等4家分公司。</span></span></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; text-align: justify; margin-top: 0em; letter-spacing: 0em; line-height: 3em; text-indent: 3em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span><span
+                                        style="font-size: 18px;">13、2015年，公司取得“AAAAA级信用企业”
+                                        及“AAA级重合同守信用企业”认定；同年先后成立了新疆和田分公司、河南分公司、北京通州分公司、梅州分公司、茂名分公司、青岛分公司、新疆塔城分公司、长沙分公司、广西分公司、十堰分公司、吉林省分公司等11家分公司。</span></span></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; text-align: justify; margin-top: 0em; letter-spacing: 0em; line-height: 3em; text-indent: 3em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span><span
+                                        style="font-size: 18px;">14、2016年，公司通过ISO27001信息安全管理体系认证；同年6月，公司取得地质勘查（固体矿产勘查）乙级资质；同年11月，公司通过国家高新技术企业认定；同年先后成立了清远分公司、揭阳分公司、河源分公司、湛江分公司、甘肃分公司、潮州分公司、新蒲新区办事处、青海分公司、江苏分公司等9家分公司。</span></span></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; text-align: justify; margin-top: 0em; letter-spacing: 0em; line-height: 3em; text-indent: 3em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span><span
+                                        style="font-size: 18px;">15、2016年深圳市爱华勘测工程有限公司在龙岗区平湖华南城购置新办公楼，并于同年12月乔迁至华南城新办公楼，标志着“爱华勘测”品牌百尺竿头更进一步。</span></span></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; text-align: justify; margin-top: 0em; letter-spacing: 0em; line-height: 3em; text-indent: 3em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span><span
+                                        style="font-size: 18px;">16、2017年，公司取得工程勘察（工程测量）甲级资质；同年7月，公司测绘资质新增五项甲级（大地测量、测绘航空摄影、摄影测量与遥感、海洋测绘、地图编制）；同年7月，公司顺利通过知识产权管理体系认证；同年8月，公司取得地质灾害治理工程勘查、评估、设计、施工丙级资质；同年年8月，公司中英文网站正式开通；同年10月，公司顺利通过广东省技术监督管理局CMA计量认证专家组的现场评审；同年公司先后成立了中原分公司、海南分公司、西安分公司、河北分公司、西藏分公司、杭州分公司、宁夏分公司、沧州分公司、四川分公司、吉林省松原市分公司等11家分公司。</span></span></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; text-align: justify; margin-top: 0em; letter-spacing: 0em; line-height: 3em; text-indent: 3em;">
+                            &nbsp;</p>
+                        <p
+                            style="margin-bottom: 0em; text-align: center; margin-top: 0em; letter-spacing: 0em; line-height: 5em; text-indent: 0em;">
+                            <span style="font-size: 29px;"><strong><span><span
+                                            style="font-family: 宋体, tahoma, arial, sans-serif;"><span><span><strong><span
+                                                            style="font-size: 29px;"><span><span><span>爱华勘测公司2018年发展大事记</span></span></span></span></strong></span></span></span></span></strong></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; text-align: justify; margin-top: 0em; letter-spacing: 0em; line-height: 3em; text-indent: 3em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span><span
+                                        style="font-size: 18px;">2018年1月，公司取得了检验检测机构资质认定证书；</span></span></span></p>
+                        <p
+                            style="margin-bottom: 0em; text-align: justify; margin-top: 0em; letter-spacing: 0em; line-height: 3em; text-indent: 3em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span><span
+                                        style="font-size: 18px;">2018年4月，公司取得工程勘察专业类（岩土工程）甲级资质；通过“信息安全管理体系”复审换证并取得新证书；</span></span></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; text-align: justify; margin-top: 0em; letter-spacing: 0em; line-height: 3em; text-indent: 3em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span><span
+                                        style="font-size: 18px;">2018年6月，公司取得连续六年（2012—2017）“广东省守合同重信用企业”；取得连续六年（2012-2017）“广东省诚信示范企业”；取得“AAA级重合同守信用企业认证证书”；</span></span></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; text-align: justify; margin-top: 0em; letter-spacing: 0em; line-height: 3em; text-indent: 3em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span><span
+                                        style="font-size: 18px;">2018年6月，公司通过软件企业年审并取得新证书；</span></span></span></p>
+                        <p
+                            style="margin-bottom: 0em; text-align: justify; margin-top: 0em; letter-spacing: 0em; line-height: 3em; text-indent: 3em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span><span
+                                        style="font-size: 18px;">2018年7月，公司取得了建筑业企业资质证书（地基基础工程专业承包叁级），预示着公司业务已向施工行业吹起了号角；取得中国地理信息产业协会授予的“2018中国地理信息产业百强企业”荣誉称号；通过“三合一”体系复审换证并取得新证书；喜获2018年深圳市测绘地理信息学会“工勘杯”定向越野赛成年男子组团体三等奖。</span></span></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; text-align: justify; margin-top: 0em; letter-spacing: 0em; line-height: 3em; text-indent: 3em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span><span
+                                        style="font-size: 18px;">2018年8月，公司获得
+                                        “爱华工程档案信息管理系统”、“爱华城市地下管网地理信息系统”、“深圳市耕地动态监测系统”等软件著作权证书；&nbsp;</span></span></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; text-align: justify; margin-top: 0em; letter-spacing: 0em; line-height: 3em; text-indent: 3em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span><span
+                                        style="font-size: 18px;">2018年9月，公司通过“知识产权管理体系认证证书”复审换证并取得新证书。</span></span></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; text-align: justify; margin-top: 0em; letter-spacing: 0em; line-height: 3em; text-indent: 3em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span><span
+                                        style="font-size: 18px;">2018年11月，公司产品“便捷式直流多用电源”获得“实用新型专利证书”；</span></span></span>
+                        </p>
+                        <p
+                            style="margin-bottom: 0em; text-align: justify; margin-top: 0em; letter-spacing: 0em; line-height: 3em; text-indent: 3em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span><span
+                                        style="font-size: 18px;">2018年12月，公司“深圳市第一次全国地理国情普查内外业数据生产（C：深圳市宝安区标段）”、“紫金县建成区地下管线普查及建立信息系统工程”项目分别获第十八届深圳市优秀工程勘察设计评选结果（工程测量）一等奖、二等奖；“深九国际产业升级项目基坑监测工程”项目获第十八届深圳市优秀工程勘察设计评选结果（工程勘察）二等奖。<br>
+                                        2018年12月，公司档案工作规范测评核准为广东省企业档案工作三级乙等规范单位。</span></span></span></p>
+                        <p
+                            style="margin-bottom: 0em; text-align: justify; margin-top: 0em; letter-spacing: 0em; line-height: 3em; text-indent: 3em;">
+                            <span style="font-family: 宋体, tahoma, arial, sans-serif;"><span><span
+                                        style="font-size: 18px;">2018年，爱华勘测公司先后成立了衡阳分公司、宁波分公司、扬州分公司、邢台分公司、辽宁省分公司、山东分公司、珠海分公司、辽阳事业部、河源事业部等9家下属单位。</span></span></span>
+                        </p>
+                    </div>
+
+                    <div class="item_box" id="item_box_3">
+                        <img src="../imgs/about/org.jpg" alt="">
+                    </div>
+
+                    <div class="item_box" id="item_box_4">
+                        <img src="../imgs/about/business_area.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------------尾部---------------------------------->
+        <div class="bg_footer">
+            <div class="footer">
+                <ul class="footer_nav">
+                    <li><a href="./about.html?tabIndex=0">关于爱华</a></li>
+                    <li><a href="./honor.html?tabIndex=0" target="_blanck">资质荣誉</a></li>
+                    <li><a href="./project-performance.html?tabIndex=0" target="_blanck">业务领域</a></li>
+                    <li><a href="./project-performance.html?tabIndex=0" target="_blanck">工程业绩</a></li>
+                    <li><a href="./news.html?tabIndex=0" target="_blanck">新闻动态</a></li>
+                    <li><a href="./company-culture.html?tabIndex=0" target="_blanck">企业文化</a></li>
+                    <li><a href="./contact.html?tabIndex=0" target="_blanck">联系我们</a></li>
+                </ul>
+                <p>
+                    联系电话：0755-83512114、83467794　　　　传真：0755-83512114　　　　Email：<a
+                        href="mailto:szahkc@126.com">szahkc@126.com</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;QQ：408667398<br />深圳市龙岗区平湖街道平湖社区平安大道1号华南城铁东物流区13栋16层
+                </p>
+            </div>
+            <div class="copyright">深圳市爱华勘测工程有限公司页面版权所有&nbsp;&nbsp;
+                <a href="http://beian.miit.gov.cn/" target="_blanck">粤ICP备17026116号</a>&nbsp;&nbsp;
+                <a href="#" target="_blanck">网站建设:切图仔</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/header.js"></script>
+<script type="module">
+    import route from "../js/route.js";
+    import { initRoute, handleChangeTab } from "../js/libs.js";
+
+    $(document).ready(function () {
+        let tabIndex = location.search.split("=")[1];
+        let aboutRoute = route.aboutRoute;
+        switch (tabIndex) {
+            case "0":
+                aboutRoute.splice(2, 0);
+                handleChangeTab(tabIndex);
+                break;
+            case "1":
+                aboutRoute.splice(2, 0, { path: "./about.html", name: "公司简介 >>", query: `tabIndex=${tabIndex}`, target: "" });
+                handleChangeTab(tabIndex);
+                break;
+            case "2":
+                aboutRoute.splice(2, 0, { path: "./about.html", name: "发展历程 >>", query: `tabIndex=${tabIndex}`, target: "" });
+                handleChangeTab(tabIndex);
+                break;
+            case "3":
+                aboutRoute.splice(2, 0, { path: "./about.html", name: "组织架构 >>", query: `tabIndex=${tabIndex}`, target: "" });
+                handleChangeTab(tabIndex);
+                break;
+            case "4":
+                aboutRoute.splice(2, 0, { path: "./about.html", name: "业务辐射 >>", query: `tabIndex=${tabIndex}`, target: "" });
+                handleChangeTab(tabIndex);
+                break;
+            default:
+                aboutRoute.splice(2, 0);
+                handleChangeTab(tabIndex);
+        }
+        initRoute(aboutRoute);
+    })
+</script>
+
+</html>

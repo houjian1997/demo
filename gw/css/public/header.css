@@ -1,0 +1,53 @@
+.bg_header{
+    height:40px;
+    background:#5cadff;
+}
+
+.bg_header .header{
+    width:1202px;
+    height:100%;
+    font-size:15px;
+    color:#fff;
+    margin:0 auto;
+}
+
+.header .header_left{
+    width:50%;
+    height:100%;
+    float:left;
+    position:relative;
+    overflow:hidden;
+}
+
+.header_left p{
+    width:50%;
+    height:100%;
+    line-height:40px;
+    text-align:center;
+    position:absolute;
+}
+
+.header .header_right{
+    width:50%;
+    height:100%;
+    float:left;
+}
+
+.header_right .header_ul{
+    width:178px;
+    height:100%;
+    float:right;
+}
+
+.header_ul li{
+    height:100%;
+    line-height:40px;
+    text-align:center;
+    float:left;
+    padding:0 5px;
+    box-sizing:border-box;
+    cursor:pointer;
+}
+
+
+
