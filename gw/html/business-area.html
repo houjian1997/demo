@@ -191,11 +191,32 @@
                   <span class="black_span">地形图、电子地图、真三维地图</span>
                 </li>
               </ol>
-              <ul id="imgs_1"></ul>
             </div>
+            <ul id="imgs_1"></ul>
           </div>
-          <div class="item_box" id="item_box_2"></div>
-          <div class="item_box" id="item_box_3"></div>
+
+          <div class="item_box" id="item_box_2">
+            <div class="describution">
+              <ol class="describution_ol">
+                <li>
+                  <span class="blue_span">地理信息工程：</span>
+                  <span class="black_span">地理地理信息数据采集、地理信息数据处理、地理信息系统及数据库建设、地理信息软件开发、地理信息系统工程监理</span>
+                </li>
+              </ol>
+            </div>
+            <ul id="imgs_2"></ul>
+          </div>
+          <div class="item_box" id="item_box_3">
+            <div class="describution">
+              <ol class="describution_ol">
+                <li>
+                  <span class="blue_span">工程勘察专业类：</span>
+                  <span class="black_span">岩土工程、工程测量</span>
+                </li>
+              </ol>
+            </div>
+            <ul id="imgs_3"></ul>
+          </div>
           <div class="item_box" id="item_box_4"></div>
           <div class="item_box" id="item_box_5"></div>
           <div class="item_box" id="item_box_6"></div>
@@ -248,9 +269,19 @@
     { src: `${imgBaseUrl}/chgc_pic/pic_07.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
     { src: `${imgBaseUrl}/chgc_pic/pic_08.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
     { src: `${imgBaseUrl}/chgc_pic/pic_09.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" }
-  ];
+  ],
+    imgList2 = [
+      { src: `${imgBaseUrl}/dlxx_pic/pic_01.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+      { src: `${imgBaseUrl}/dlxx_pic/pic_02.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+    ],
+    imgList3 = [
+      { src: `${imgBaseUrl}/chgc_pic/pic_01.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+      { src: `${imgBaseUrl}/chgc_pic/pic_02.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+      { src: `${imgBaseUrl}/chgc_pic/pic_03.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+      { src: `${imgBaseUrl}/chgc_pic/pic_04.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+    ];
 
-  let $imgs_1 = $("#imgs_1");
+  let $imgs_1 = $("#imgs_1"), $imgs_2 = $("#imgs_2"), $imgs_3 = $("#imgs_3")
 
   $(document).ready(function () {
     let tabIndex = location.search.split("=")[1];
@@ -271,10 +302,14 @@
       case "2":
         businessAreaRoute.splice(2, 0, { path: "./business-area.html", name: "地理信息 >>", query: `tabIndex=${tabIndex}`, target: "" });
         handleChangeTab(tabIndex);
+        createImgList(imgList2, tabIndex);
+        $imgs_2.viewer();
         break;
       case "3":
         businessAreaRoute.splice(2, 0, { path: "./business-area.html", name: "工程勘察 >>", query: `tabIndex=${tabIndex}`, target: "" });
         handleChangeTab(tabIndex);
+        createImgList(imgList3, tabIndex);
+        $imgs_3.viewer();
         break;
       case "4":
         businessAreaRoute.splice(2, 0, { path: "./business-area.html", name: "土地规划 >>", query: `tabIndex=${tabIndex}`, target: "" });

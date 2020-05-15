@@ -71,7 +71,7 @@
   width:100%;
 }
 
-#item_box_1 ul li{
+.item_box ul li{
   width:30%;
   height:300px;
   margin-bottom:40px;
