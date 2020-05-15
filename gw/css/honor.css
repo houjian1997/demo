@@ -4,6 +4,10 @@
     background-size:cover;
 }
 
+.bg_content {
+  background:url("../imgs/bg/bg_01.png") repeat;
+}
+
 .bg_content .content{
     width:1202px;
     height:100%;
