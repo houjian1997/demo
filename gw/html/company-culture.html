@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>深圳市爱华勘测工程有限公司-企业文化</title>
     <link rel="stylesheet" href="../css/public/common.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/viewerjs/dist/viewer.css" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/public/header.css" type="text/css">
     <link rel="stylesheet" href="../css/public/search.css" type="text/css">
     <link rel="stylesheet" href="../css/public/nav.css" type="text/css">
     <link rel="stylesheet" href="../css/company-culture.css" type="text/css">
     <link rel="stylesheet" href="../css/public/route.css" type="text/css">
     <link rel="stylesheet" href="../css/public/tab.css" type="text/css">
+    <link rel="stylesheet" href="../css/public/content.css" type="text/css">
     <link rel="stylesheet" href="../css/public/footer.css" type="text/css">
 </head>
 
@@ -115,7 +117,7 @@
                                 <a href="./company-culture.html?tabIndex=4">职工园地</a>
                                 <a href="./company-culture.html?tabIndex=5">培训学习</a>
                                 <a href="./company-culture.html?tabIndex=6">公益慈善</a>
-                                <a href="./company-culture.html?tabIndex=7">建党工会</a>
+                                <a href="./company-culture.html?tabIndex=7">党建工会</a>
                             </li>
                         </ol>
                     </li>
@@ -154,10 +156,43 @@
                     <li><a href="./company-culture.html?tabIndex=4">职工园地</a></li>
                     <li><a href="./company-culture.html?tabIndex=5">培训学习</a></li>
                     <li><a href="./company-culture.html?tabIndex=6">公益慈善</a></li>
-                    <li><a href="./company-culture.html?tabIndex=7">建党工会</a></li>
+                    <li><a href="./company-culture.html?tabIndex=7">党建工会</a></li>
                 </ul>
                 <div class="content_item">
-                    <div class="item_box" id="item_box_1"></div>
+                    <div class="item_box" id="item_box_1">
+                        <p><strong>爱华公司中、高层领导就职宣誓词：</strong>遵章守纪，高风亮节；真抓实干，开拓创新；唇亡齿寒，荣辱与共；肝胆相照，共创辉煌！</p>
+                        <p><strong>爱华人宣誓词：</strong>实干奉献，拼搏开拓；和谐诚信，守法遵规；创造价值，成就理想；服务社会，报效国家！</p>
+                        <p><strong>爱华公司中、高层领导就职宣誓词：</strong>遵章守纪，高风亮节；真抓实干，开拓创新；唇亡齿寒，荣辱与共；肝胆相照，共创辉煌！</p>
+                        <p><strong>爱华人座右铭：</strong>不为失败找借口，只为成功找方法，不努力争创行业一流的企业迟早要完蛋！</p>
+                        <p><strong>“四精”企业质量方针：</strong>精心设计、精准勘测、精尖产品、精致服务。</p>
+                        <p><strong>“四赢”企业精神：</strong>与时俱进赢机遇，励精图治赢发展。创造卓越赢尊崇，做强做大赢未来！</p>
+                        <p><strong>“四同”企业宗旨：</strong>同努力、同进步、同奉献、同发展。</p>
+                    </div>
+                    <div class="item_box" id="item_box_2">
+                        <p class="noinfo">
+                            <img src="../imgs/noinfo.gif" alt="">
+                            <span>没有相关信息</span>
+                        </p>
+                    </div>
+                    <div class="item_box" id="item_box_3">
+                        <p class="noinfo">
+                            <img src="../imgs/noinfo.gif" alt="">
+                            <span>没有相关信息</span>
+                        </p>
+                    </div>
+                    <div class="item_box" id="item_box_4">
+                        <ul id="imgs_4"></ul>
+                    </div>
+                    <div class="item_box" id="item_box_5"></div>
+                    <div class="item_box" id="item_box_6">
+                        <ul id="imgs_6"></ul>
+                    </div>
+                    <div class="item_box" id="item_box_7">
+                        <p class="noinfo">
+                            <img src="../imgs/noinfo.gif" alt="">
+                            <span>没有相关信息</span>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -188,10 +223,46 @@
 </body>
 
 <script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/viewer.js"></script>
+<script src="../js/jquery-viewer.js"></script>
 <script src="../js/header.js"></script>
 <script type="module">
     import route from "../js/route.js";
-    import { initRoute, handleChangeTab } from "../js/libs.js";
+    import { initRoute, handleChangeTab, createImgList } from "../js/libs.js";
+
+    let imgBaseUrl = "../imgs/culture";
+    let imgList4 = [
+        { src: `${imgBaseUrl}/zgyd_pic/pic_01.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+        { src: `${imgBaseUrl}/zgyd_pic/pic_02.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+        { src: `${imgBaseUrl}/zgyd_pic/pic_03.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+        { src: `${imgBaseUrl}/zgyd_pic/pic_04.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+        { src: `${imgBaseUrl}/zgyd_pic/pic_05.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+        { src: `${imgBaseUrl}/zgyd_pic/pic_06.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+        { src: `${imgBaseUrl}/zgyd_pic/pic_07.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+        { src: `${imgBaseUrl}/zgyd_pic/pic_08.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+        { src: `${imgBaseUrl}/zgyd_pic/pic_09.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+        { src: `${imgBaseUrl}/zgyd_pic/pic_10.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+        { src: `${imgBaseUrl}/zgyd_pic/pic_11.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+        { src: `${imgBaseUrl}/zgyd_pic/pic_12.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" }
+    ],
+        imgList6 = [
+            { src: `${imgBaseUrl}/gycs_pic/pic_01.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+            { src: `${imgBaseUrl}/gycs_pic/pic_02.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+            { src: `${imgBaseUrl}/gycs_pic/pic_03.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+            { src: `${imgBaseUrl}/gycs_pic/pic_04.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+            { src: `${imgBaseUrl}/gycs_pic/pic_05.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+            { src: `${imgBaseUrl}/gycs_pic/pic_06.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+            { src: `${imgBaseUrl}/gycs_pic/pic_07.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+            { src: `${imgBaseUrl}/gycs_pic/pic_08.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+            { src: `${imgBaseUrl}/gycs_pic/pic_09.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+            { src: `${imgBaseUrl}/gycs_pic/pic_10.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+            { src: `${imgBaseUrl}/gycs_pic/pic_11.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+            { src: `${imgBaseUrl}/gycs_pic/pic_12.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+            { src: `${imgBaseUrl}/gycs_pic/pic_13.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+            { src: `${imgBaseUrl}/gycs_pic/pic_14.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+            { src: `${imgBaseUrl}/gycs_pic/pic_15.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" }
+        ];
+    let $imgs_4 = $("#imgs_4"), $imgs_6 = $("#imgs_6");
 
     $(document).ready(function () {
         let tabIndex = location.search.split("=")[1];
@@ -216,6 +287,8 @@
             case "4":
                 cultureRoute.splice(2, 0, { path: "./company-culture.html", name: "职工园地 >>", query: `tabIndex=${tabIndex}`, target: "" });
                 handleChangeTab(tabIndex);
+                createImgList(imgList4, tabIndex);
+                $imgs_4.viewer();
                 break;
             case "5":
                 cultureRoute.splice(2, 0, { path: "./company-culture.html", name: "培训学习 >>", query: `tabIndex=${tabIndex}`, target: "" });
@@ -224,9 +297,11 @@
             case "6":
                 cultureRoute.splice(2, 0, { path: "./company-culture.html", name: "公益慈善 >>", query: `tabIndex=${tabIndex}`, target: "" });
                 handleChangeTab(tabIndex);
+                createImgList(imgList6, tabIndex);
+                $imgs_6.viewer();
                 break;
             case "7":
-                cultureRoute.splice(2, 0, { path: "./company-culture.html", name: "建党工会 >>", query: `tabIndex=${tabIndex}`, target: "" });
+                cultureRoute.splice(2, 0, { path: "./company-culture.html", name: "党建工会 >>", query: `tabIndex=${tabIndex}`, target: "" });
                 handleChangeTab(tabIndex);
                 break;
             default:

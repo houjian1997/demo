@@ -3,3 +3,56 @@
     background:url("../imgs/contact/banner.jpg") center center no-repeat;
     background-size:cover;
 }
+
+#item_box_1 .left_box{
+    width:42%;
+    float:left;
+    margin-right:5%;
+}
+
+#item_box_1 .right_box{
+    width:50%;
+    height:612px;
+    float:left;
+}
+
+#item_box_1 .left_box p{
+    line-height: 34px;
+    color: #333;
+    font-size: 16px;
+}
+
+#item_box_1 .left_box p strong{
+    font-weight:bold;
+}
+
+.item_box .noinfo{
+    width:1176px;
+    height:72px;
+    margin:0 auto;
+    padding-top:20px;
+    box-sizing:border-box;
+}
+
+.noinfo img{
+    width:32px;
+    height:32px;
+    display:block;
+    float:left;
+    margin-right:20px;
+}
+
+.noinfo span{
+    display:block;
+    float:left;
+    height:32px;
+    line-height:32px;
+    color:#5cadff;
+    font-weight:700;
+}
+
+#item_box_4  p{
+    line-height: 34px;
+    color: #333;
+    font-size: 16px;
+}

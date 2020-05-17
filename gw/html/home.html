@@ -25,7 +25,7 @@
         </div>
         <div class="header_right">
           <ul class="header_ul">
-            <li>联系我们</li>
+            <li><a href="./contact.html?tabIndex=0" target="_blanck">联系我们</a></li>
             <li>中文</li>
             <li>English</li>
           </ul>
@@ -115,7 +115,7 @@
                 <a href="./company-culture.html?tabIndex=4" target="_blanck">职工园地</a>
                 <a href="./company-culture.html?tabIndex=5" target="_blanck">培训学习</a>
                 <a href="./company-culture.html?tabIndex=6" target="_blanck">公益慈善</a>
-                <a href="./company-culture.html?tabIndex=7" target="_blanck">建党工会</a>
+                <a href="./company-culture.html?tabIndex=7" target="_blanck">党建工会</a>
               </li>
             </ol>
           </li>
@@ -165,7 +165,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;深圳市爱华勘测工程有限公司是深圳市综合实力较强，理念超前，管理先进，发展迅速的专业勘测公司。<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司具有工程测量、地籍测量、房产测绘、地理信息系统甲级资质，同时具有岩土工程勘察、海洋测绘、摄影测量与遥感、行政区域界线测绘、地图编制和土地整治、利用、保护、规划等的编制、设计、论证、评估等乙级资质。专业技术力量雄厚，拥有高性能网络服务器、高精度全站仪、数字水准仪、GPS、管线探测仪、测深仪、图形工作站等众多先进仪器设备。公司成立技术专家委员会，专门负责指导各类工程项目的实施、检查与审核。
           </p>
           <div id="about_more">
-            <a href="#" target="_blank">MORE+</a>
+            <a href="./about.html?tabIndex=0" target="_blank">MORE+</a>
           </div>
         </div>
       </div>
@@ -296,12 +296,7 @@
           <p><span>案例展示</span></p>
         </div>
         <div class="case_show_bottom">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+          <ul class="case_show_ul"></ul>
         </div>
       </div>
     </div>
@@ -469,7 +464,7 @@
           <ul class="company_culture_ul" id="imgs"></ul>
         </div>
         <div class="company_culture_bottom">
-          <div id="company_culture_more"><a href="#" target="_blank">MORE+</a></div>
+          <div id="company_culture_more"><a href="./company-culture.html?tabIndex=0" target="_blank">MORE+</a></div>
         </div>
       </div>
     </div>
@@ -506,7 +501,7 @@
               </li>
             </ul>
           </div>
-          <div class="map"></div>
+          <div class="map" id="container"></div>
         </div>
         <div class="contact_bottom"></div>
       </div>
@@ -538,17 +533,21 @@
 </body>
 
 <script src="../js/jquery-1.10.1.min.js"></script>
+<script src="../js/header.js"></script>
+<script src="../js/swiper.min.js"></script>
 <script src="../js/viewer.js"></script>
 <script src="../js/jquery-viewer.js"></script>
-<script src="../js/swiper.min.js"></script>
-<script src="../js/header.js"></script>
+<script
+  src="https://webapi.amap.com/maps?v=1.4.15&key=e9c39c3559968ce83753077ffd42aaa9&&plugin=AMap.Scale,AMap.OverView,AMap.ToolBar"
+  crossorigin="anonymous"></script>
+<script src="../js/initMap.js"></script>
 <script>
   function handelSearch() {
     console.log($("#search_input").val())
   }
 
-  // 轮播
-  var mySwiper = new Swiper('.swiper-container', {
+  /***********************************轮播*************************************/
+  let mySwiper = new Swiper('.swiper-container', {
     autoplay: true,//可选选项，自动滑动
     loop: true,
     spaceBetween: 30,
@@ -564,11 +563,7 @@
     },
   })
 
-  $(".business_text").on("mouseover", function () {
-
-  })
-
-  // 切换tab 显示新闻
+  /***********************************新闻*************************************/
   $(".list_2").each(function (index, item) {
     $(item).hide();
   })
@@ -586,49 +581,85 @@
     })
   })
 
-  // 渲染图片列表
-  initCultureList();
-  function initCultureList() {
-    let cultureList = [
-      { imgSrc: "../imgs/home/company_culture/culture_01.jpg", imgTitle: "公司积极参与测绘法制宣传活动", index: 1 },
-      { imgSrc: "../imgs/home/company_culture/culture_02.jpg", imgTitle: "公司积极参与测绘法制宣传活动", index: 2 },
-      { imgSrc: "../imgs/home/company_culture/culture_03.jpg", imgTitle: "公司积极参与测绘法制宣传活动", index: 3 },
-      { imgSrc: "../imgs/home/company_culture/culture_04.jpg", imgTitle: "公司积极参与测绘法制宣传活动", index: 4 },
-      { imgSrc: "../imgs/home/company_culture/culture_05.jpg", imgTitle: "公司积极参与测绘法制宣传活动", index: 5 },
-      { imgSrc: "../imgs/home/company_culture/culture_06.jpg", imgTitle: "公司积极参与测绘法制宣传活动", index: 6 },
-      { imgSrc: "../imgs/home/company_culture/culture_07.jpg", imgTitle: "公司积极参与测绘法制宣传活动", index: 7 },
-      { imgSrc: "../imgs/home/company_culture/culture_08.jpg", imgTitle: "公司积极参与测绘法制宣传活动", index: 8 },
-      { imgSrc: "../imgs/home/company_culture/culture_09.jpg", imgTitle: "公司积极参与测绘法制宣传活动", index: 9 },
-      { imgSrc: "../imgs/home/company_culture/culture_10.jpg", imgTitle: "公司积极参与测绘法制宣传活动", index: 10 }
-    ];
-    let str = "", $imgs = $("#imgs");
-    cultureList.forEach(item => {
+  /******************************案例展示图片列表********************************/
+  let caseShowImgList = [
+    { imgSrc: "../imgs/home/case_show/case_show_01.jpg", imgTitle: "公司积极参与测绘法制宣传活动" },
+    { imgSrc: "../imgs/home/case_show/case_show_02.jpg", imgTitle: "公司积极参与测绘法制宣传活动" },
+    { imgSrc: "../imgs/home/case_show/case_show_03.jpg", imgTitle: "公司积极参与测绘法制宣传活动" },
+    { imgSrc: "../imgs/home/case_show/case_show_04.jpg", imgTitle: "公司积极参与测绘法制宣传活动" },
+    { imgSrc: "../imgs/home/case_show/case_show_05.jpg", imgTitle: "公司积极参与测绘法制宣传活动" },
+    { imgSrc: "../imgs/home/case_show/case_show_06.jpg", imgTitle: "公司积极参与测绘法制宣传活动" },
+    { imgSrc: "../imgs/home/case_show/case_show_07.jpg", imgTitle: "公司积极参与测绘法制宣传活动" },
+    { imgSrc: "../imgs/home/case_show/case_show_08.jpg", imgTitle: "公司积极参与测绘法制宣传活动" },
+    { imgSrc: "../imgs/home/case_show/case_show_09.jpg", imgTitle: "公司积极参与测绘法制宣传活动" },
+    { imgSrc: "../imgs/home/case_show/case_show_10.jpg", imgTitle: "公司积极参与测绘法制宣传活动" }
+  ]
+  $(".case_show_ul").html(createImgList(caseShowImgList));
+
+  let caseShowImgWidth = $(".case_show_ul li img").width();
+
+  setInterval(() => {
+    let positionX = $(".case_show_ul").position().left;
+    positionX -= 1;
+    $(".case_show_bottom .case_show_ul").css("left", positionX);
+    let index = Math.abs(positionX / (cultureImgWidth + 20));
+    if (index === 5) {
+      let list = caseShowImgList.slice(0, 5);
+      caseShowImgList = caseShowImgList.splice(0, 5).concat(list);
+      $(".case_show_ul").html(createImgList(caseShowImgList));
+      positionX = 0;
+      $(".case_show_bottom .case_show_ul").css("left", positionX);
+    }
+  }, 50)
+
+  /******************************企业文化图片列表********************************/
+  let cultureImgList = [
+    { imgSrc: "../imgs/home/company_culture/culture_01.jpg", imgTitle: "公司积极参与测绘法制宣传活动" },
+    { imgSrc: "../imgs/home/company_culture/culture_02.jpg", imgTitle: "公司积极参与测绘法制宣传活动" },
+    { imgSrc: "../imgs/home/company_culture/culture_03.jpg", imgTitle: "公司积极参与测绘法制宣传活动" },
+    { imgSrc: "../imgs/home/company_culture/culture_04.jpg", imgTitle: "公司积极参与测绘法制宣传活动" },
+    { imgSrc: "../imgs/home/company_culture/culture_05.jpg", imgTitle: "公司积极参与测绘法制宣传活动" },
+    { imgSrc: "../imgs/home/company_culture/culture_06.jpg", imgTitle: "公司积极参与测绘法制宣传活动" },
+    { imgSrc: "../imgs/home/company_culture/culture_07.jpg", imgTitle: "公司积极参与测绘法制宣传活动" },
+    { imgSrc: "../imgs/home/company_culture/culture_08.jpg", imgTitle: "公司积极参与测绘法制宣传活动" },
+    { imgSrc: "../imgs/home/company_culture/culture_09.jpg", imgTitle: "公司积极参与测绘法制宣传活动" },
+    { imgSrc: "../imgs/home/company_culture/culture_10.jpg", imgTitle: "公司积极参与测绘法制宣传活动" }
+  ];
+  $(".company_culture_ul").html(createImgList(cultureImgList));
+
+  let cultureImgWidth = $(".company_culture_ul li img").width();
+  let $imgs = $("#imgs");
+  $imgs.viewer({
+    viewed: function () {
+      $imgs.viewer('zoomTo', 1);
+    }
+  });
+
+  setInterval(() => {
+    let positionX = $(".company_culture_ul").position().left;
+    positionX -= 1;
+    $(".company_culture_center .company_culture_ul").css("left", positionX);
+    let index = Math.abs(positionX / (cultureImgWidth + 20));
+    if (index === 6) {
+      let list = cultureImgList.slice(0, 6);
+      cultureImgList = cultureImgList.splice(0, 6).concat(list);
+      $(".company_culture_ul").html(createImgList(cultureImgList));
+      positionX = 0;
+      $(".company_culture_center .company_culture_ul").css("left", positionX);
+    }
+  }, 50)
+
+
+  function createImgList(imgList) {
+    let str = "";
+    imgList.forEach(item => {
       str += ` <li>
                             <img src=${item.imgSrc} alt="" title=${item.imgTitle}>
                             <p>${item.imgTitle}</p>
                         </li>`
     })
-    $(".company_culture_ul").html(str);
-    $imgs.viewer({
-      viewed: function () {
-        $imgs.viewer('zoomTo', 1);
-      }
-    });
+    return str
   }
-
-  setInterval(() => {
-    let positionX = $(".company_culture_ul").position().left;
-    let imgWidth = $(".company_culture_ul li img").width();
-    positionX -= 1;
-    $(".company_culture_center .company_culture_ul").css("left", positionX);
-    // let index = Math.floor(Math.abs(positionX / (imgWidth + 20)));
-    // if (index >= 10) {
-    //     index = 0;
-    // }
-    // let lastImg = cultureList.find(item => {
-    //     return item.index === index;
-    // })
-  }, 50)
 </script>
 
 </html>

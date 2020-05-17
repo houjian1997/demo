@@ -49,5 +49,13 @@
     cursor:pointer;
 }
 
+.header_ul li:nth-child(1),.header_ul li:nth-child(2){
+    background:url("../../imgs/home/icon/line.png")  no-repeat right center;
+}
+
+.header_ul li a{
+    color:#fff;
+}
+
 
 

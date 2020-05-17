@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="../css/business-area.css" type="text/css">
   <link rel="stylesheet" href="../css/public/route.css" type="text/css">
   <link rel="stylesheet" href="../css/public/tab.css" type="text/css">
+  <link rel="stylesheet" href="../css/public/content.css" type="text/css">
   <link rel="stylesheet" href="../css/public/footer.css" type="text/css">
 </head>
 
@@ -116,7 +117,7 @@
                 <a href="./company-culture.html?tabIndex=4" target="_blanck">职工园地</a>
                 <a href="./company-culture.html?tabIndex=5" target="_blanck">培训学习</a>
                 <a href="./company-culture.html?tabIndex=6" target="_blanck">公益慈善</a>
-                <a href="./company-culture.html?tabIndex=7" target="_blanck">建党工会</a>
+                <a href="./company-culture.html?tabIndex=7" target="_blanck">党建工会</a>
               </li>
             </ol>
           </li>
@@ -194,7 +195,6 @@
             </div>
             <ul id="imgs_1"></ul>
           </div>
-
           <div class="item_box" id="item_box_2">
             <div class="describution">
               <ol class="describution_ol">
@@ -217,10 +217,60 @@
             </div>
             <ul id="imgs_3"></ul>
           </div>
-          <div class="item_box" id="item_box_4"></div>
-          <div class="item_box" id="item_box_5"></div>
-          <div class="item_box" id="item_box_6"></div>
-          <div class="item_box" id="item_box_7"></div>
+          <div class="item_box" id="item_box_4">
+            <div class="describution">
+              <ol class="describution_ol">
+                <li>
+                  <span class="blue_span">土地规划：</span>
+                  <span
+                    class="black_span">广东省内除报国务院审批的土地利用总体规划以外的市、县、镇（乡）级国地规划、土地利用总体规划、土地整治规划、耕地保护规划、土地生态建设规划、土地整治工程<br />规划以及其他土地利用专项规划的编制、设计、评估、可研、论证、咨询等业务</span>
+                </li>
+              </ol>
+            </div>
+            <p class="noinfo">
+              <img src="../imgs/noinfo.gif" alt="">
+              <span>没有相关信息</span>
+            </p>
+          </div>
+          <div class="item_box" id="item_box_5">
+            <div class="describution">
+              <ol class="describution_ol">
+                <li>
+                  <span class="blue_span">地质勘察：</span>
+                  <span class="black_span">固体矿产勘察</span>
+                </li>
+              </ol>
+            </div>
+            <ul id="imgs_5"></ul>
+          </div>
+          <div class="item_box" id="item_box_6">
+            <div class="describution">
+              <ol class="describution_ol">
+                <li>
+                  <span class="blue_span">地质灾害</span>
+                  <span class="black_span"></span>
+                </li>
+              </ol>
+            </div>
+            <p class="noinfo">
+              <img src="../imgs/noinfo.gif" alt="">
+              <span>没有相关信息</span>
+            </p>
+          </div>
+          <div class="item_box" id="item_box_7">
+            <div class="describution">
+              <ol class="describution_ol">
+                <li>
+                  <span class="blue_span">信息系统集成与服务</span>
+                  <span class="black_span"></span>
+                </li>
+              </ol>
+            </div>
+            <p class="noinfo">
+              <img src="../imgs/noinfo.gif" alt="">
+              <span>没有相关信息</span>
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -275,13 +325,16 @@
       { src: `${imgBaseUrl}/dlxx_pic/pic_02.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
     ],
     imgList3 = [
-      { src: `${imgBaseUrl}/chgc_pic/pic_01.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
-      { src: `${imgBaseUrl}/chgc_pic/pic_02.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
-      { src: `${imgBaseUrl}/chgc_pic/pic_03.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
-      { src: `${imgBaseUrl}/chgc_pic/pic_04.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
-    ];
+      { src: `${imgBaseUrl}/gckc_pic/pic_01.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+      { src: `${imgBaseUrl}/gckc_pic/pic_02.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+      { src: `${imgBaseUrl}/gckc_pic/pic_03.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+      { src: `${imgBaseUrl}/gckc_pic/pic_04.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" },
+    ],
+    imgList5 = [
+      { src: `${imgBaseUrl}/dzkc_pic/pic_01.jpg`, title: "公司工作人员在湖北咸宁市进行城镇地籍调查工作" }
+    ]
 
-  let $imgs_1 = $("#imgs_1"), $imgs_2 = $("#imgs_2"), $imgs_3 = $("#imgs_3")
+  let $imgs_1 = $("#imgs_1"), $imgs_2 = $("#imgs_2"), $imgs_3 = $("#imgs_3"), $imgs_5 = $("#imgs_5");
 
   $(document).ready(function () {
     let tabIndex = location.search.split("=")[1];
@@ -318,6 +371,8 @@
       case "5":
         businessAreaRoute.splice(2, 0, { path: "./business-area.html", name: "地质勘察 >>", query: `tabIndex=${tabIndex}`, target: "" });
         handleChangeTab(tabIndex);
+        createImgList(imgList5, tabIndex);
+        $imgs_5.viewer();
         break;
       case "6":
         businessAreaRoute.splice(2, 0, { path: "./business-area.html", name: "地质灾害 >>", query: `tabIndex=${tabIndex}`, target: "" });

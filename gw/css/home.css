@@ -282,9 +282,46 @@
 
 .case_show .case_show_bottom{
     width:100%;
-    height:320px;
-    background:pink;
+    height:310px;
+    padding-top:40px;
+    overflow:hidden;
+    position: relative;
 }
+
+.case_show_bottom .case_show_ul{
+    width:3600px;
+    height:270px;
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+.case_show_ul li{
+    width:340px;
+    height:100%;
+    float:left;
+    margin-right:20px;
+    cursor:pointer;
+}
+
+.case_show_ul li img{
+    width:100%;
+    height:226px;
+    display:block;
+}
+
+.case_show_ul li p{
+    width:100%;
+    height:34px;
+    text-align: center;
+    line-height:34px;
+    color:#333;
+    font-weight:700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 
 .bg_news{
     height:526px;
@@ -519,6 +556,7 @@
     text-align: center;
     line-height:34px;
     color:#333;
+    font-weight:700;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -658,7 +696,6 @@
     width:50%;
     height:236px;
     float:right;
-    background:yellow;
 }
 
 .contact .contact_bottom{

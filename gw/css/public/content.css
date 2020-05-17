@@ -1,0 +1,19 @@
+.bg_content {
+    background:url("../../imgs/bg/bg_01.png") repeat;
+  }
+  
+  .bg_content .content{
+    width:1202px;
+    height:100%;
+    margin:0 auto;
+    padding-bottom:30px;
+  }
+  
+  .content .content_item{
+    padding-top:40px;
+    box-sizing:border-box;
+  }
+  
+  .content_item .item_box{
+    width:100%;
+  }

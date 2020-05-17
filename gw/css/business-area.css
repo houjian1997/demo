@@ -1,30 +1,12 @@
 .banner{
-    height:255px;
-    background:url("../imgs/business_area/banner.jpg") center center no-repeat;
-    background-size:cover;
+  height:255px;
+  background:url("../imgs/business_area/banner.jpg") center center no-repeat;
+  background-size:cover;
 }
 
-.bg_content {
-  background:url("../imgs/bg/bg_01.png") repeat;
-}
-
-.bg_content .content{
-  width:1202px;
-  height:100%;
-  margin:0 auto;
-}
-
-.content .content_item{
-  padding-top:40px;
-  box-sizing:border-box;
-}
-
-.content_item .item_box{
-  width:100%;
-}
-
-.item_box .describution_ol{
+.describution .describution_ol{
   border-bottom:1px solid #e2e1e1;
+  padding-bottom:40px;
 }
 
 .describution_ol li{
@@ -75,4 +57,29 @@
   width:30%;
   height:300px;
   margin-bottom:40px;
+}
+
+.item_box .noinfo{
+  width:1176px;
+  height:72px;
+  margin:0 auto;
+  padding-top:20px;
+  box-sizing:border-box;
+}
+
+.noinfo img{
+  width:32px;
+  height:32px;
+  display:block;
+  float:left;
+  margin-right:20px;
+}
+
+.noinfo span{
+  display:block;
+  float:left;
+  height:32px;
+  line-height:32px;
+  color:#5cadff;
+  font-weight:700;
 }

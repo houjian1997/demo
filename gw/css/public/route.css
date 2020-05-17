@@ -1,5 +1,5 @@
 .bg_route{
-    height:34px;
+    height:50px;
     background:url("../../imgs/bg/bg_01.png") repeat;
 }
 
@@ -20,7 +20,7 @@
 
 .route_ul li{
     height:100%;
-    line-height:34px;
+    line-height:50px;
     color:#333;
 }
 
